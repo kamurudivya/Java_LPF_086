@@ -1,0 +1,17 @@
+package com.bridgelabz.Bst;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class BinarySearchTreeTest {
+
+    @Test
+    public void givenNumbers_WhenAddedToBST_ShouldReturnSize() {
+        MyBinaryTree<Comparable> myBinaryTree = new MyBinaryTree<>();
+        for (int i : new int[]{56, 30, 70}) {
+            myBinaryTree.add(i);
+        }
+        System.out.println(myBinaryTree.root);
+        Assert.assertEquals(3,myBinaryTree.getSize());
+    }
+}
